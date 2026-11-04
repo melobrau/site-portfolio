@@ -46,21 +46,13 @@
   <main id="conteudo">
 
     <!-- 02 · REEL E APRESENTAÇÃO
-         Para colocar o reel: salve o vídeo em assets/reel/reel.mp4
-         (e, se quiser uma capa, assets/reel/capa.jpg). -->
+         O reel vem do Vimeo (não pesa no site) em modo fundo: toca sozinho, mudo e em loop, sem botões. Para trocar o vídeo, mude o número (id) e o código (h) no endereço do iframe.
+         A imagem assets/reel/capa.jpg aparece atrás enquanto o player carrega. -->
     <section id="inicio" class="abertura" aria-label="Apresentação">
       <div class="reel">
-        <video class="reel__video" controls autoplay muted loop playsinline preload="auto" poster="assets/reel/capa.jpg"
-          aria-label="Reel de Mateus Melo">
-          <source src="assets/reel/reel.mp4" type="video/mp4">
-        </video>
-        <div class="reel__vazio" aria-hidden="true">
-          <svg viewBox="0 0 100 100" preserveAspectRatio="none">
-            <line x1="0" y1="0" x2="100" y2="100" vector-effect="non-scaling-stroke" />
-            <line x1="100" y1="0" x2="0" y2="100" vector-effect="non-scaling-stroke" />
-          </svg>
-          <p>Reel · vídeo 16:9<br><small>coloque o arquivo em assets/reel/reel.mp4</small></p>
-        </div>
+        <iframe class="reel__video" title="Reel de Mateus Melo"
+          src="https://player.vimeo.com/video/1242563978?h=e74212b88d&background=1&autoplay=1&muted=1&loop=1&playsinline=1&dnt=1"
+          allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       </div>
 
       <div class="apresentacao">
