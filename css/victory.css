@@ -1,0 +1,15 @@
+/* =========================================================
+   FONTE VICTORY STRIKER (textos corridos, legendas, rótulos)
+   A Milker (css/milker.css) continua nos títulos e botões; esta folha cobre o resto.
+   ATENÇÃO: a versão DEMO não tem letras acentuadas (á ã ç é õ...). Onde faltar,
+   o navegador usa a Inter só naquela letra (ver font-family abaixo).
+   ========================================================= */
+@font-face {
+  font-family: 'Victory Striker';
+  src: url('../assets/fonts/VictoryStriker.woff2') format('woff2');
+  font-weight: 400 700;
+  font-display: swap;
+}
+body, button, input, textarea {
+  font-family: 'Victory Striker', 'Inter', system-ui, sans-serif;
+}

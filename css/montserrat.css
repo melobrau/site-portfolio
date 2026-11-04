@@ -1,0 +1,31 @@
+/* =========================================================
+   MONTSERRAT SEMIBOLD: todos os textos que não são Milker
+   (A Milker, em css/milker.css, fica nos títulos e botões.)
+   Fonte livre (licença OFL), pode ir para o GitHub e para o ar sem restrição.
+   ========================================================= */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat-SemiBold.woff2') format('woff2');
+  font-weight: 100 600; /* SemiBold: o texto corrido */
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat-Bold.woff2') format('woff2');
+  font-weight: 700 900; /* Bold: rótulos e destaques */
+  font-style: normal;
+  font-display: swap;
+}
+body, button, input, textarea {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+/* sub-subtítulos (ÁREAS DE ATUAÇÃO, VÍDEO, SOFTWARES, VIDEOMAKER · ANIMADOR...) em negrito */
+.secao__rotulo,
+.softwares__titulo,
+.apresentacao__papel,
+.area__numero {
+  font-weight: 700;
+}
