@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[TESTE Milker] Mateus Melo | Videomaker, artista visual, tropa do resolve.</title>
+  <meta name="description"
+    content="Portfólio de Mateus Melo: vídeo, animação, ilustração, trabalhos mistos e loja de obras.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/milker.css">
+</head>
+
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- 01 · CABEÇALHO E MENU -->
+  <header class="topo">
+    <a class="logo" href="#inicio" aria-label="Mateus Melo, início">
+      <img src="assets/elementos/logo-melo-preta.png" alt="">
+    </a>
+
+    <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu">
+      <span class="menu-botao__texto">Menu</span>
+    </button>
+
+    <nav id="menu" class="menu" aria-label="Principal">
+      <ul>
+        <li><a href="#video">Vídeo</a></li>
+        <li><a href="#animacao">Animação</a></li>
+        <li><a href="#ilustracao">Ilustração</a></li>
+        <li><a href="#mistos">Trabalhos mistos</a></li>
+        <li><a href="#loja">Loja</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 03 · LETREIRO (decorativo)
+       Temas: preto (padrão), azul, vermelho, branco.
+       Para testar sem mexer no código: abra o site com ?tema=azul no endereço. -->
+  <section class="letreiro" data-tema="preto" aria-hidden="true">
+    <div class="trilho"></div>
+  </section>
+
+  <main id="conteudo">
+
+    <!-- 02 · REEL E APRESENTAÇÃO
+         O reel vem do Vimeo (não pesa no site) em modo fundo: toca sozinho, mudo e em loop, sem botões. Para trocar o vídeo, mude o número (id) e o código (h) no endereço do iframe.
+         A imagem assets/reel/capa.jpg aparece atrás enquanto o player carrega. -->
+    <section id="inicio" class="abertura" aria-label="Apresentação">
+      <div class="reel">
+        <iframe class="reel__video" title="Reel de Mateus Melo"
+          src="https://player.vimeo.com/video/1242563978?h=e74212b88d&background=1&autoplay=1&muted=1&loop=1&playsinline=1&dnt=1"
+          allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div class="apresentacao">
+        <div>
+          <p class="apresentacao__papel">Videomaker · Animador · Artista visual</p>
+          <h1>Toda vez que eu dou um passo o mundo sai do lugar!</h1>
+          <p class="apresentacao__sub">Roteiro, captação, edição, motion design e ilustração: do storyboard à tela
+            final, onde as ideias viram realidade.</p>
+        </div>
+
+        <!-- SOFTWARES: ícones já no tom escuro da paleta em assets/softwares/escuro/ (PNG com fundo transparente).
+             Enquanto o arquivo não existir, aparece uma sigla no lugar. -->
+        <div class="softwares">
+          <p class="softwares__titulo">Softwares</p>
+          <ul class="softwares__lista">
+            <li><img src="assets/softwares/escuro/after-effects.png" alt="After Effects" title="After Effects"
+                data-sigla="Ae">
+            </li>
+            <li><img src="assets/softwares/escuro/photoshop.png" alt="Photoshop" title="Photoshop" data-sigla="Ps"></li>
+            <li><img src="assets/softwares/escuro/capcut.png" alt="CapCut" title="CapCut" data-sigla="Cc"></li>
+            <li><img src="assets/softwares/escuro/krita.png" alt="Krita" title="Krita" data-sigla="Kr"></li>
+            <li><img src="assets/softwares/escuro/illustrator.png" alt="Illustrator" title="Illustrator"
+                data-sigla="Ai"></li>
+          </ul>
+        </div>
+        <div class="botoes">
+          <a class="botao botao--cheio" href="#video">Ver trabalhos</a>
+          <a class="botao botao--vazado" href="#loja">Ir para a loja</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 · ÁREAS DE ATUAÇÃO
+         Cada cartão leva à seção da área. Para trocar o espaço da capa por uma imagem:
+         troque <div class="area__capa"></div> por <img class="area__capa" src="..." alt=""> -->
+    <section id="areas" class="areas" aria-labelledby="areas-titulo">
+      <h2 id="areas-titulo" class="secao__rotulo">Áreas de atuação</h2>
+      <ul class="areas__lista">
+        <li>
+          <a class="area area--azul" href="#video">
+            <div class="area__capa" data-capa="video"></div>
+            <span class="area__numero">01</span>
+            <h3 class="area__nome">Vídeo</h3>
+            <p class="area__texto">Captação, direção e edição de filmes, campanhas e conteúdo.</p>
+            <span class="area__ver">Ver trabalhos <span aria-hidden="true">→</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="area area--vermelho" href="#animacao">
+            <div class="area__capa" data-capa="animacao"></div>
+            <span class="area__numero">02</span>
+            <h3 class="area__nome">Animação</h3>
+            <p class="area__texto">Motion design, personagens e animação feita em código.</p>
+            <span class="area__ver">Ver trabalhos <span aria-hidden="true">→</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="area area--amarelo" href="#ilustracao">
+            <div class="area__capa" data-capa="ilustracao"></div>
+            <span class="area__numero">03</span>
+            <h3 class="area__nome">Ilustração</h3>
+            <p class="area__texto">Arte digital, retratos e capas de álbum.</p>
+            <span class="area__ver">Ver trabalhos <span aria-hidden="true">→</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="area area--escuro" href="#mistos">
+            <div class="area__capa" data-capa="misto"></div>
+            <span class="area__numero">04</span>
+            <h3 class="area__nome">Trabalhos mistos</h3>
+            <p class="area__texto">Quando vídeo, animação e ilustração se encontram.</p>
+            <span class="area__ver">Ver trabalhos <span aria-hidden="true">→</span></span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- VINHETA (divisória) · tema azul -->
+    <section class="letreiro" data-tema="azul" aria-hidden="true">
+      <div class="trilho"></div>
+    </section>
+
+    <!-- 05 · VÍDEO
+         Os cartões são montados pelo js/site.js a partir da lista em js/videos.js (é lá que você edita
+         nome de exibição, título, subtítulo e descrição de cada vídeo). O player só carrega no clique. -->
+    <section id="video" class="secao-video" aria-labelledby="video-titulo">
+      <h2 id="video-titulo" class="secao__rotulo">Vídeo</h2>
+      <ul class="videos__lista" data-categoria="video">
+      </ul>
+    </section>
+
+    <dialog id="player" class="player" aria-label="Player de vídeo">
+      <div class="player__palco">
+        <div class="player__lado player__lado--esq">
+          <h3 class="player__titulo"></h3>
+          <p class="player__subtitulo"></p>
+        </div>
+
+        <div class="player__janela">
+          <button class="player__fechar" type="button" aria-label="Fechar vídeo">Fechar ✕</button>
+          <div class="player__midia">
+            <div class="player__quadro"><iframe title="Vídeo" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+            <ul class="player__frames" hidden></ul>
+            <button class="carrossel__seta carrossel__seta--esq visor__seta player__seta" type="button" aria-label="Voltar ao vídeo" hidden></button>
+            <button class="carrossel__seta carrossel__seta--dir visor__seta player__seta" type="button" aria-label="Ver os frames" hidden></button>
+          </div>
+          <p class="player__nome"></p>
+        </div>
+
+        <div class="player__lado player__lado--dir">
+          <p class="player__descricao"></p>
+          <p class="player__ferramentas"></p>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- VINHETA (divisória) · tema vermelho -->
+    <section class="letreiro" data-tema="vermelho" aria-hidden="true">
+      <div class="trilho"></div>
+    </section>
+
+    <!-- 06 · ANIMAÇÃO
+         Mesma estrutura da seção Vídeo: os cartões vêm de js/videos.js (categoria 'animacao'). -->
+    <section id="animacao" class="secao-video" aria-labelledby="animacao-titulo">
+      <h2 id="animacao-titulo" class="secao__rotulo">Animação</h2>
+      <ul class="videos__lista" data-categoria="animacao">
+      </ul>
+    </section>
+
+    <!-- VINHETA (divisória) · tema branco -->
+    <section class="letreiro" data-tema="branco" aria-hidden="true">
+      <div class="trilho"></div>
+    </section>
+
+    <!-- 07 · ILUSTRAÇÃO
+         Grade montada pelo js/site.js a partir de js/ilustracoes.js. Ao clicar, abre o visualizador. -->
+    <section id="ilustracao" class="secao-video secao-ilustracao" aria-labelledby="ilustracao-titulo">
+      <h2 id="ilustracao-titulo" class="secao__rotulo">Ilustração</h2>
+      <ul class="ilustracoes__lista" data-lista="ilustracao">
+      </ul>
+      <p class="ilustracoes__vazio" hidden>[Adicione as artes em js/ilustracoes.js]</p>
+    </section>
+
+    <!-- VINHETA (divisória) · tema preto -->
+    <section class="letreiro" data-tema="preto" aria-hidden="true">
+      <div class="trilho"></div>
+    </section>
+
+    <!-- 08 · TRABALHOS MISTOS (categoria 'misto' em js/videos.js) -->
+    <section id="mistos" class="secao-video" aria-labelledby="mistos-titulo">
+      <h2 id="mistos-titulo" class="secao__rotulo">Trabalhos mistos</h2>
+      <ul class="videos__lista" data-categoria="misto">
+      </ul>
+    </section>
+
+    <dialog id="visualizador" class="player" aria-label="Visualizador de ilustração">
+      <div class="player__palco">
+        <div class="player__lado player__lado--esq">
+          <h3 class="player__titulo"></h3>
+          <p class="player__subtitulo"></p>
+        </div>
+
+        <div class="player__janela">
+          <button class="player__fechar" type="button" aria-label="Fechar ilustração">Fechar ✕</button>
+          <div class="player__quadro visor__quadro">
+            <div class="visor__faixa"></div>
+            <button class="carrossel__seta carrossel__seta--esq visor__seta" type="button" aria-label="Imagem anterior" hidden></button>
+            <button class="carrossel__seta carrossel__seta--dir visor__seta" type="button" aria-label="Próxima imagem" hidden></button>
+          </div>
+          <p class="player__nome visor__nome"><span class="visor__rotulo"></span><span class="visor__contador"></span></p>
+        </div>
+
+        <div class="player__lado player__lado--dir">
+          <p class="player__descricao"></p>
+          <p class="player__ferramentas"></p>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- (reservado) Próximas seções: Loja e Sobre entram aqui, antes da vinheta e do Contato. -->
+
+    <!-- VINHETA (divisória) · tema vermelho -->
+    <section class="letreiro" data-tema="vermelho" aria-hidden="true">
+      <div class="trilho"></div>
+    </section>
+
+    <!-- CONTATO (os canais ficam em js/contato.js) -->
+    <section id="contato" class="contato" aria-labelledby="contato-titulo">
+      <h2 id="contato-titulo" class="secao__rotulo">Contato</h2>
+      <div class="contato__corpo">
+        <div class="contato__chamada">
+          <p class="contato__titulo"></p>
+          <p class="contato__texto"></p>
+        </div>
+        <ul class="contato__lista"></ul>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/videos.js"></script>
+  <script src="js/ilustracoes.js"></script>
+  <script src="js/contato.js"></script>
+  <script src="js/site.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+/* =========================================================
+   FONTE MILKER (títulos e botões)
+   Títulos grandes e botões em MAIÚSCULAS na Milker.
+   Para voltar à fonte anterior, apague a linha que chama css/milker.css no index.html.
+   ========================================================= */
+@font-face {
+  font-family: 'Milker';
+  src: url('../assets/fonts/Milker.woff2') format('woff2');
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+/* títulos */
+.apresentacao h1,
+.area__nome,
+.player__titulo,
+.contato__titulo {
+  font-family: 'Milker', 'Inter', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  line-height: 1.02;
+}
+.apresentacao h1 { font-size: clamp(22px, 2.1vw, 34px); }
+.area__nome { font-size: clamp(18px, 1.7vw, 26px); }
+.player__titulo { font-size: clamp(22px, 2.4vw, 40px); }
+.contato__titulo { font-size: clamp(26px, 3.2vw, 50px); }
+
+/* botões e navegação */
+.botao,
+.menu a,
+.area__ver,
+.contato__rotulo {
+  font-family: 'Milker', 'Inter', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+.botao { font-size: 14px; }
+.menu a { font-size: 13px; }
