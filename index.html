@@ -232,14 +232,30 @@
       </div>
     </dialog>
 
-    <section class="provisorio">
-      <p>[Próxima seção: loja]</p>
+    <!-- (reservado) Próximas seções: Loja e Sobre entram aqui, antes da vinheta e do Contato. -->
+
+    <!-- VINHETA (divisória) · tema vermelho -->
+    <section class="letreiro" data-tema="vermelho" aria-hidden="true">
+      <div class="trilho"></div>
+    </section>
+
+    <!-- CONTATO (os canais ficam em js/contato.js) -->
+    <section id="contato" class="contato" aria-labelledby="contato-titulo">
+      <h2 id="contato-titulo" class="secao__rotulo">Contato</h2>
+      <div class="contato__corpo">
+        <div class="contato__chamada">
+          <p class="contato__titulo"></p>
+          <p class="contato__texto"></p>
+        </div>
+        <ul class="contato__lista"></ul>
+      </div>
     </section>
 
   </main>
 
   <script src="js/videos.js"></script>
   <script src="js/ilustracoes.js"></script>
+  <script src="js/contato.js"></script>
   <script src="js/site.js"></script>
 </body>
 

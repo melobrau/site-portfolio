@@ -427,6 +427,40 @@
   }
 
   /* ---------------------------------------------------------
+     CONTATO: monta a chamada e as linhas a partir de js/contato.js
+     --------------------------------------------------------- */
+  (function () {
+    var dados = window.CONTATO;
+    var secao = document.getElementById('contato');
+    if (!dados || !secao) return;
+    secao.querySelector('.contato__titulo').textContent = dados.titulo || '';
+    secao.querySelector('.contato__texto').textContent = dados.texto || '';
+    var lista = secao.querySelector('.contato__lista');
+    (dados.canais || []).forEach(function (c) {
+      var li = document.createElement('li');
+      var el = document.createElement(c.link ? 'a' : 'div');
+      el.className = 'contato__canal';
+      if (c.link) {
+        el.href = c.link;
+        if (/^https?:/.test(c.link)) { el.target = '_blank'; el.rel = 'noopener'; }
+      }
+      var r = document.createElement('span');
+      r.className = 'contato__rotulo';
+      r.textContent = c.rotulo;
+      var t = document.createElement('span');
+      t.className = 'contato__valor';
+      t.textContent = c.texto;
+      var s = document.createElement('span');
+      s.className = 'contato__seta';
+      s.setAttribute('aria-hidden', 'true');
+      s.textContent = c.link ? '↗' : '';
+      el.appendChild(r); el.appendChild(t); el.appendChild(s);
+      li.appendChild(el);
+      lista.appendChild(li);
+    });
+  })();
+
+  /* ---------------------------------------------------------
      LETREIRO
      Padrão repetido: nome, sol, assinatura, sol.
      Monta grupos iguais até cobrir a tela e anda exatamente um

@@ -727,6 +727,39 @@ a { color: inherit; }
   letter-spacing: 0.04em;
 }
 
+/* =========================================================
+   CONTATO
+   ========================================================= */
+.contato { border-bottom: var(--linha); }
+.contato__corpo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.contato__chamada { padding: 48px 32px 56px; border-right: var(--linha); }
+.contato__titulo { margin: 0; font-size: clamp(32px, 4.2vw, 64px); line-height: 1.05; font-weight: 700; letter-spacing: -0.01em; }
+.contato__texto { margin: 20px 0 0; max-width: 34ch; font-size: 18px; line-height: 1.5; opacity: 0.85; }
+.contato__lista { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; }
+.contato__lista li { flex: 1 1 0; border-bottom: var(--linha); }
+.contato__lista li:last-child { border-bottom: 0; }
+.contato__canal {
+  display: grid; grid-template-columns: 9em minmax(0, 1fr) auto; align-items: center; gap: 16px;
+  height: 100%; min-height: 84px; padding: 20px 32px;
+  color: var(--escuro); text-decoration: none; transition: background-color 0.15s, color 0.15s;
+}
+.contato__rotulo { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.contato__valor { font-size: clamp(18px, 1.8vw, 26px); font-weight: 700; overflow-wrap: anywhere; }
+.contato__seta { font-size: 24px; font-weight: 700; }
+a.contato__canal:hover, a.contato__canal:focus-visible { background: var(--azul); color: var(--creme); }
+.contato__lista li:nth-child(2) a.contato__canal:hover, .contato__lista li:nth-child(2) a.contato__canal:focus-visible { background: var(--vermelho); }
+.contato__lista li:nth-child(3) a.contato__canal:hover, .contato__lista li:nth-child(3) a.contato__canal:focus-visible { background: var(--amarelo); color: var(--escuro); }
+a.contato__canal:focus-visible { outline: 3px solid var(--escuro); outline-offset: -6px; }
+@media (max-width: 900px) {
+  .contato__corpo { grid-template-columns: 1fr; }
+  .contato__chamada { padding: 32px 24px 36px; border-right: 0; border-bottom: var(--linha); }
+  .contato__canal { grid-template-columns: 7em minmax(0, 1fr) auto; padding: 18px 24px; }
+}
+@media (max-width: 600px) {
+  .contato__canal { grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; }
+  .contato__rotulo { grid-column: 1 / -1; }
+}
+
 /* Quem prefere menos movimento vê o letreiro parado */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
