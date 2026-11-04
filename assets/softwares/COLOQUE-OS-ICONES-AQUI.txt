@@ -1,0 +1,7 @@
+Os ícones usados no site ficam em assets/softwares/escuro/ (já no tom #211B00):
+  after-effects.png
+  photoshop.png
+  capcut.png
+  krita.png
+  illustrator.png     (pronto, ainda não usado na página)
+Os arquivos originais ficam na pasta assets/softwares/.

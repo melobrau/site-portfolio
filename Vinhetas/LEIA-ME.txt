@@ -1,0 +1,19 @@
+PALETA
+  Amarelo   #FCCE03
+  Azul      #0330FC
+  Vermelho  #FC0330
+  Preto     #211B00   (o "preto" da paleta)
+  Branco    #FFFDF5   (o "branco" da paleta, um creme bem claro)
+
+VINHETAS (pasta vinhetas)
+  MP4, 1400 x 120 px, 30 fps, loop de 7 s sem emenda.
+  Padrão repetido: nome, sol, assinatura, sol.
+  01 fundo vermelho, resto branco
+  02 fundo azul, resto branco
+  03 fundo branco, resto preto
+  04 fundo preto, resto branco
+
+ELEMENTOS (pasta elementos-png)
+  Nome, sol e assinatura em PNG com fundo transparente, em branco e em preto.
+  Para montar o letreiro direto no site com CSS, sem vídeo.
+  Obs.: a imagem do nome tem resolução baixa (253 x 25 px de tinta).

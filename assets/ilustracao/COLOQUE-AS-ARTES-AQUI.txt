@@ -1,0 +1,2 @@
+Coloque aqui as ilustrações já otimizadas (JPG ou WebP, até ~1600 px no lado maior, menos de 500 KB cada).
+Depois liste cada uma em js/ilustracoes.js.

@@ -1,0 +1,6 @@
+Coloque aqui o vídeo do reel com este nome:
+
+  reel.mp4     vídeo em 16:9 (por exemplo 1920 x 1080), H.264, até uns 20 MB para carregar rápido
+  capa.jpg     (opcional) imagem que aparece antes de dar play, também em 16:9
+
+Enquanto o arquivo reel.mp4 não existir, o site mostra um espaço reservado no lugar.
