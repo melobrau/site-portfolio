@@ -1,0 +1,34 @@
+# ---- Arquivos de teste e fontes com licença que não pode ir pro ar ----
+index-milker.html
+index-victory.html
+css/victory.css
+assets/fonts/VictoryStriker.woff2
+
+# ---- Vídeos locais: o site usa o Vimeo, então não precisam subir ----
+*.mp4
+*.mov
+*.avi
+*.mkv
+assets/reel/COLOQUE-O-REEL-AQUI.txt
+
+# ---- Arquivos de trabalho / originais pesados ----
+*.psd
+*.psb
+*.kra
+*.ai
+*.aep
+*.prproj
+*.blend
+*.blend1
+*.zip
+*.rar
+originais/
+**/originais/
+_to_delete/
+
+# ---- Lixo do sistema e de editores ----
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+*.log
