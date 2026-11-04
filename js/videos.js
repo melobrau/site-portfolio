@@ -41,7 +41,7 @@ window.VIDEOS = [
     nome: 'Ativos Precatórios · INSS',
     titulo: 'Ativos Precatórios · INSS',
     subtitulo: 'Material informativo para Instagram - 2026.',
-    descricao: '[Descrição: o que é o projeto, qual foi o seu papel e como foi feito.]'
+    descricao: ''
   },
   {
     categoria: 'video',
@@ -121,7 +121,7 @@ window.VIDEOS = [
     nome: 'Motion Fenalaw',
     titulo: 'Motion Fenalaw',
     subtitulo: 'Animação de card.',
-    descricao: '[Descrição: o que é o projeto, qual foi o seu papel e como foi feito.]'
+    descricao: ''
   },
   {
     categoria: 'animacao',
