@@ -526,4 +526,26 @@
       espera = setTimeout(montar, 150);
     });
   });
+  /* =========================================================
+     SOBRE: monta a seção a partir de js/sobre.js
+     ========================================================= */
+  (function () {
+    var d = window.SOBRE, secao = document.getElementById('sobre');
+    if (!d || !secao) return;
+    secao.querySelector('.sobre__titulo').textContent = d.titulo || '';
+    var par = secao.querySelector('.sobre__paragrafos');
+    (d.paragrafos || []).forEach(function (t) { var p = document.createElement('p'); p.textContent = t; par.appendChild(p); });
+    var ul = secao.querySelector('.sobre__fazer');
+    (d.fazer || []).forEach(function (t) { var li = document.createElement('li'); li.textContent = t; ul.appendChild(li); });
+    var st = secao.querySelector('.sobre__status');
+    if (d.status) { st.querySelector('span:last-child').textContent = d.status; st.hidden = false; }
+    var cv = secao.querySelector('.sobre__cv');
+    if (d.curriculo) { cv.href = d.curriculo; cv.hidden = false; }
+    var fig = secao.querySelector('.sobre__foto'), foto = fig.querySelector('img');
+    if (d.foto) {
+      var t = new Image();
+      t.onload = function () { foto.src = d.foto; foto.hidden = false; fig.classList.add('tem-foto'); };
+      t.src = d.foto;
+    }
+  })();
 })();

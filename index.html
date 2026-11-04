@@ -10,6 +10,27 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/montserrat.css">
   <link rel="stylesheet" href="css/milker.css">
+
+  <!-- Ícone da aba e compartilhamento (WhatsApp, Instagram, LinkedIn...)
+       IMPORTANTE: quando o site tiver endereço (ex.: https://mateusmelo.com.br/), troque
+       "assets/og/capa.jpg" abaixo pelo endereço completo (https://mateusmelo.com.br/assets/og/capa.jpg).
+       As redes só mostram a imagem quando o endereço é completo. -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#FCCE03">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Mateus Melo">
+  <meta property="og:title" content="Mateus Melo | Videomaker, animador, artista visual, analista e produtor">
+  <meta property="og:description" content="Vídeo, animação, ilustração e trabalhos mistos. Portfólio de Mateus Melo.">
+  <meta property="og:image" content="assets/og/capa.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo de Mateus Melo sobre fundo amarelo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mateus Melo | Videomaker, animador, artista visual, analista e produtor">
+  <meta name="twitter:description" content="Vídeo, animação, ilustração e trabalhos mistos. Portfólio de Mateus Melo.">
+  <meta name="twitter:image" content="assets/og/capa.jpg">
 </head>
 
 <body>
@@ -59,7 +80,7 @@
 
       <div class="apresentacao">
         <div>
-          <p class="apresentacao__papel">Videomaker · Animador · Artista visual</p>
+          <p class="apresentacao__papel">Videomaker · Animador · Artista visual · Analista · Produtor</p>
           <h1>Toda vez que eu dou um passo o mundo sai do lugar!</h1>
           <p class="apresentacao__sub">Roteiro, captação, edição, motion design e ilustração: do storyboard à tela
             final, onde as ideias viram realidade.</p>
@@ -234,7 +255,30 @@
       </div>
     </dialog>
 
-    <!-- (reservado) Próximas seções: Loja e Sobre entram aqui, antes da vinheta e do Contato. -->
+    <!-- VINHETA (divisória) · tema azul -->
+    <section class="letreiro" data-tema="azul" aria-hidden="true">
+      <div class="trilho"></div>
+    </section>
+
+    <!-- SOBRE (o texto fica em js/sobre.js) -->
+    <section id="sobre" class="sobre" aria-labelledby="sobre-titulo">
+      <h2 id="sobre-titulo" class="secao__rotulo">Sobre</h2>
+      <div class="sobre__corpo">
+        <figure class="sobre__foto">
+          <img alt="Retrato de Mateus Melo" hidden>
+          <img class="sobre__sol" src="assets/elementos/sol-escuro.png" alt="">
+        </figure>
+        <div class="sobre__texto">
+          <p class="sobre__titulo"></p>
+          <div class="sobre__paragrafos"></div>
+          <ul class="sobre__fazer"></ul>
+          <p class="sobre__status" hidden><span class="sobre__ponto" aria-hidden="true"></span><span></span></p>
+          <a class="botao botao--cheio sobre__cv" href="#" hidden download>Baixar currículo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- (reservado) Loja entra aqui, antes da vinheta e do Contato. -->
 
     <!-- VINHETA (divisória) · tema vermelho -->
     <section class="letreiro" data-tema="vermelho" aria-hidden="true">
@@ -258,6 +302,7 @@
   <script src="js/videos.js"></script>
   <script src="js/ilustracoes.js"></script>
   <script src="js/contato.js"></script>
+  <script src="js/sobre.js"></script>
   <script src="js/site.js"></script>
 </body>
 
